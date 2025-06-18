@@ -1,0 +1,382 @@
+/* ======= BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1e;
+  color: #f0f0f5;
+  line-height: 1.8;
+}
+
+/* ======= HEADER ======= */
+header {
+  background-color: #111;
+  padding: 40px 20px 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin-top: 10px;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #2f2f2f;
+  color: #ffd369;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: none;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* ======= MAIN LAYOUT ======= */
+.content {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ======= CARD STYLES ======= */
+.card {
+  background-color: #2a2a2e;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffd369;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1.05rem;
+  color: #d1d1d6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card ul {
+  padding-left: 25px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+/* ============================
+   STYLE POUR INDEX / ACCUEIL
+   ============================ */
+
+/* Container global des sections */
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* espace entre les blocs */
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cartes de l'accueil */
+.sections-container .card {
+  background-color: #2a2a2e;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.sections-container .card:hover {
+  transform: scale(1.02);
+}
+
+.sections-container .card h2 {
+  color: #ffd369;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sections-container .card p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* Images de l'accueil */
+.sections-container .image-placeholder {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sections-container .img-box {
+  width: 230px;
+  height: 150px;
+  background-color: #444;
+  border-radius: 12px;
+  color: #aaa;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Responsive ajusté */
+@media screen and (max-width: 768px) {
+  .sections-container .card {
+    padding: 40px 20px;
+  }
+
+  .sections-container {
+    gap: 60px;
+  }
+
+  .sections-container .img-box {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* ======= IMAGE SECTION ======= */
+.image-placeholder {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.img-box {
+  width: 250px;
+  height: 160px;
+  background-color: #444;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.img-box:hover {
+  transform: scale(1.03);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background-color: #111;
+  text-align: center;
+  color: #888;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+/* ======= ANIMATIONS ======= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= RESPONSIVE ======= */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #222;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    z-index: 999;
+    border-radius: 10px;
+    display: none;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profil-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd369;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.page-banner {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: flex-start;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.banner-image {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.quote-box {
+  background-color: #333;
+  padding: 25px;
+  border-left: 5px solid #ffd369;
+  font-style: italic;
+  margin-top: 40px;
+  color: #ccc;
+  text-align: center;
+}
+
+a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffb347;
+}
+
+.code-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.image-block {
+  max-width: 300px;
+  text-align: center;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.fullwidth-image {
+  width: 100%;
+  margin: 20px 0;
+  /* Pour que la section prenne la largeur du parent (main.content) */
+}
+
+.fullwidth-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* facultatif, arrondit un peu les coins */
+}

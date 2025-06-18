@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrer les Réseaux</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <h1>Administrer les Réseaux</h1>
+  <nav id="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="reseaux.html" class="active">Réseaux</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+      <li><a href="developpement.html">Développement</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <section class="card accent1" data-aos="fade-up">
+    <h2>Compétences AC - Administrer les réseaux</h2>
+    <ul>
+      <li>AC11.01 | Lois fondamentales de l’électricité ( BUT 1 )</li>
+      <li>AC11.02 | Architecture des systèmes numériques, codage et Internet ( BUT 1 )</li>
+      <li>AC11.03 | Configuration de base d’un réseau local ( BUT 1 )</li>
+      <li>AC11.04 | Systèmes d’exploitation et administration des réseaux ( BUT 1 )</li>
+      <li>AC11.05 | Identification des dysfonctionnements ( BUT 1 )</li>
+      <li>AC11.06 | Installation et documentation d’un poste client ( BUT 1 )</li>
+      <li>AC21.01 à AC21.06 | Routage dynamique, QoS, sécurité, virtualisation, services réseaux ( BUT 2 )</li>
+      <li>AC31.01 à AC31.06 | Conception, documentation, maquette, gestion et défense de projet ( BUT 3 )</li>
+    </ul>
+  </section>
+
+  <section class="card accent2" data-aos="fade-left">
+    <h2>SAÉ : Sensibilisation à l’hygiène informatique et à la cybersécurité</h2>
+    <p class="center-text">
+      Cette SAÉ nous a permis d’acquérir les bases essentielles de la cybersécurité : mots de passe, bonnes pratiques,
+      gestion des droits, attaques fréquentes. L’objectif était de comprendre l’importance de la sécurité numérique,
+      dans un contexte professionnel comme personnel.
+    </p>
+    <div class="image-placeholder">
+  <div class="img-box">
+    <img src="hygiene1.webp" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="hygiene2.jpeg" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="hygiene3.webp" alt="Droits utilisateurs" />
+  </div>
+</div>
+  </section>
+
+  <section class="card accent3" data-aos="fade-right">
+    <h2>SAÉ : S’initier aux réseaux informatiques</h2>
+    <p class="center-text">
+      À travers un travail sur EVE-NG, nous avons conçu un réseau avec serveur DHCP, commutateurs et routeurs,
+      en configurant les IP, le routage, les VLANs, etc. Ce travail a permis de comprendre l’adressage IP et la
+      configuration de réseaux d’entreprise simulés.
+    </p>
+   <div class="image-placeholder">
+  <div class="img-box">
+    <img src="eveng.png" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="eveng2.png" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="eveng3.png" alt="Droits utilisateurs" />
+  </div>
+</div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 - Assmy Anas</p>
+</footer>
+
+<!-- Script JS pour le menu -->
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("open");
+  }
+</script>
+
+<!-- Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+</body>
+</html>
