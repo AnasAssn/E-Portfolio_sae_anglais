@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connecter les Entreprises</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <h1>Connecter les Entreprises</h1>
+  <nav id="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="reseaux.html">Réseaux</a></li>
+      <li><a href="connexion.html" class="active">Connexion</a></li>
+      <li><a href="developpement.html">Développement</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <section class="card accent2" data-aos="fade-up">
+    <h2>Compétences AC - Connecter les entreprises</h2>
+    <ul>
+      <li>AC12.01 à AC12.05 | Mesure, analyse, ToIP, supports, communication client ( BUT 1 )</li>
+      <li>AC22.01 à AC22.05 | Accès distant, multi-site, transmission complexe, cahier des charges ( BUT 2 )</li>
+      <li>AC32.01 à AC32.05 | Connexions IP sécurisées, sans fil, fibre, projets collaboratifs ( BUT 3 )</li>
+    </ul>
+  </section>
+
+  <section class="card accent1" data-aos="fade-left">
+    <h2>SAÉ : Découvrir un dispositif de transmission (Wi-Fi, AP, RJ45)</h2>
+    <p class="center-text">
+      Cette SAÉ nous a permis de découvrir le fonctionnement d’un réseau sans fil (Wi-Fi), l’analyse des canaux
+      2,4 et 5 GHz, l’implantation de points d’accès, l’utilisation d’un heatmap, ainsi que les bases du câblage RJ45
+      (normes T568A/B, noyaux, bandeaux, etc.).
+    </p>
+    <div class="image-placeholder">
+  <div class="img-box">
+    <img src="heatmap.png" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="cablage.jpg" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="debit.jpg" alt="Droits utilisateurs" />
+  </div>
+</div>
+    <p>
+  <a href="Bilan SAE Dispositif de Transmission (MULLER Yoann, HARTMANN Quentin, ASSMY Anas, Akli HOUAMDI.pdf" target="_blank">📄 Cliquer ici pour voir mon rapport au format PDF</a>
+</p>
+
+  </section>
+
+  <section class="card accent3" data-aos="fade-right">
+    <h2>Ressource R1.05 : Support de transmission pour réseaux locaux</h2>
+    <p class="center-text">
+      Nous avons analysé les infrastructures nécessaires à une entreprise pour construire un nouveau bâtiment
+      connecté : choix entre fibre monomode/multimode, distances, équipements passifs/actifs, création d’un devis
+      complet avec justification technique et budgétaire.
+    </p>
+      <div class="image-placeholder">
+  <div class="img-box">
+    <img src="plan1.jpg" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="plan2.jpg" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="plan3.png" alt="Droits utilisateurs" />
+  </div>
+</div>
+    <p>
+  <a href="TP R1.05 Câblage.docx" target="_blank">📄 Cliquer ici pour voir mon devis au format DOCX</a>
+</p>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 - Assmy Anas</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("open");
+  }
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>

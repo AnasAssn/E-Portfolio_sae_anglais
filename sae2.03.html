@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SAE2.03 - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SAE2.03 - Portfolio de Projet</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="sae2.03.html" class="active">SAE2.03</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="card">
+      <h2>Résumé du Projet (English)</h2>
+      <p>
+        The SAE2.03 project involved developing a full-stack web application to manage student absences and justification requests.  
+        The backend was built with Django and connected to a MariaDB database hosted in a virtual machine.  
+        We also configured Nginx as a reverse proxy and Gunicorn as the WSGI HTTP server to ensure a secure and performant deployment environment.  
+        This project strengthened my skills in backend development, system deployment, and teamwork.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Détails Techniques</h2>
+      <p>
+        Le backend de l'application repose sur <strong>Django</strong>, avec des fonctionnalités CRUD complètes pour les absences et justifications.  
+        La base de données <strong>MariaDB</strong> est hébergée dans une <strong>machine virtuelle (VM)</strong> Debian, configurée en réseau avec Django via des variables d’environnement sécurisées.  
+        Le déploiement de l'application s'est fait avec <strong>Gunicorn</strong> comme serveur d'application Python (WSGI), et <strong>Nginx</strong> comme reverse proxy assurant la gestion des connexions HTTP/HTTPS, la redirection vers Gunicorn, et la sécurité.  
+        Ce setup permet une architecture similaire à celle utilisée en production réelle.
+      </p>
+      <section class="fullwidth-image">
+  <img src="Capture d’écran du 2025-06-18 18-53-40.png" alt="Description de l'image" />
+</section>
+    </section>
+
+    <section class="card">
+      <h2>Impressions et Retours</h2>
+      <p>
+        Ce que j'ai le plus apprécié, c'est l'utilisation concrète de Django et la pertinence du projet, qui ont rendu l'apprentissage plus motivant.  
+        Les difficultés rencontrées concernaient principalement la configuration du serveur, la communication entre la base de données dans la VM et Django, ainsi que le déploiement avec Nginx et Gunicorn.  
+        Malgré cela, ce projet m’a permis de progresser dans la résolution de problèmes complexes et de mieux comprendre l’architecture d’une application web déployée.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Compétences Acquises</h2>
+      <div>
+        <p>Développement backend avec Django et Python</p>
+        <p>Création d'une base de données relationnelle avec MariaDB</p>
+        <p>Configuration et sécurisation d’une machine virtuelle</p>
+        <p>Déploiement d’une application avec Nginx et Gunicorn</p>
+        <p>Utilisation de Git et GitHub pour le versionnage</p>
+        <p>Travail d’équipe, gestion de projet, et planification (diagramme de Gantt)</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Documents & Illustrations</h2>
+
+      <div class="documents">
+        <h3>Documents PDF</h3>
+        <ul>
+          <li><a href="Fiche de Procédure - Saé 23 - Mettre en place une solution informatique pour l’entreprise.docx" target="_blank">Cliquer ici : Fiche de Procédure (PDF)</a></li>
+          <li><a href="GANTT projet Luca Akaza Anas - Sombre.pdf" target="_blank">Cliquer ici : Diagramme de Gantt</a></li>
+          <li><a href="Diapo_Projet_Absence.pdf" target="_blank">Cliquer ici : Diaporama de présentation</a></li>
+        </ul>
+      </div>
+
+   <div class="images">
+  <h3>Illustrations</h3>
+  <div class="code-gallery">
+    <div class="image-block">
+      <p class="caption">Fiche de procédure</p>
+      <img src="Capture d’écran du 2025-06-18 18-29-28.png" alt="Fiche de procédure" />
+    </div>
+    <div class="image-block">
+      <p class="caption">Exemple de models.py</p>
+      <img src="Capture d’écran du 2025-06-18 18-30-43.png" alt="Vue Django Justifications" />
+    </div>
+    <div class="image-block">
+      <p class="caption">Extrait du diagramme de Gantt</p>
+      <img src="Capture d’écran du 2025-06-18 18-31-49.png" alt="Diagramme Gantt" />
+    </div>
+  </div>
+</div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Portfolio - Projet SAE2.03
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-bg">
+
+  <header>
+  <div class="header-container">
+    <img src="profil.webp" alt="Photo de profil" class="profil-pic" />
+    <h1>E-PORTFOLIO - ASSMY Anas</h1>
+  </div>
+  <nav id="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul id="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="reseaux.html">Administrer les Réseaux</a></li>
+      <li><a href="connexion.html">Connecter les Entreprises</a></li>
+      <li><a href="developpement.html">Créer des Outils</a></li>
+      <li><a href="sae2.03.html">SAE2.03</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main class="sections-container">
+
+    <section class="card accent1">
+      <h2>Administrer les réseaux et Internet</h2>
+      <p class="center-text">
+        Compétences liées à la configuration, sécurité, supervision et gestion des réseaux informatiques.
+      </p>
+      <div class="image-placeholder">
+        <img src="administrer.webp" alt="Administrer les réseaux" class="img-box" />
+        <img src="administrer1.webp" alt="Administrer les réseaux" class="img-box" />
+      </div>
+    </section>
+
+    <section class="card accent2">
+      <h2>Connecter les entreprises et les usagers</h2>
+      <p class="center-text">
+        Installation, mise en service et administration d’équipements de transmission, ToIP, accès sécurisés.
+      </p>
+      <div class="image-placeholder">
+        <img src="connecter.webp" alt="Administrer les réseaux" class="img-box" />
+        <img src="connecter1.webp" alt="Administrer les réseaux" class="img-box" />
+      </div>
+    </section>
+
+    <section class="card accent3">
+      <h2>Créer des outils et applications informatiques</h2>
+      <p class="center-text">
+        Développement d’applications, automatisation, client/serveur, sécurité et gestion de projet.
+      </p>
+      <div class="image-placeholder">
+        <img src="programmer.webp" alt="Administrer les réseaux" class="img-box" />
+        <img src="programmer1.webp" alt="Administrer les réseaux" class="img-box" />
+      </div>
+    </section>
+
+    <div class="quote-box">
+  <p>Ce portfolio représente mon parcours, mes progrès et ma passion pour les réseaux et le développement. J'espère qu'il vous convaincra de mon engagement et de mon professionnalisme.</p>
+</div>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Assmy Anas</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>

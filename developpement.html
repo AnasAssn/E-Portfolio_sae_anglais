@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Créer des Outils</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <h1>Créer des Outils Informatiques</h1>
+  <nav id="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="reseaux.html">Réseaux</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+      <li><a href="developpement.html" class="active">Développement</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <section class="card accent3" data-aos="fade-up">
+    <h2>Compétences AC - Développement et Programmation</h2>
+    <ul>
+      <li>AC13.01 à AC13.06 | Algorithmes, programmation, web, gestion de données, travail collaboratif ( BUT 1 )</li>
+      <li>AC23.01 à AC23.05 | Scripting, client/serveur, BDD, accès aux données ( BUT 2 )</li>
+      <li>AC33.01 à AC33.06 | Cahier des charges, collaboration, formation utilisateurs, veille techno ( BUT 3 )</li>
+    </ul>
+  </section>
+
+  <section class="card accent1" data-aos="fade-left">
+    <h2>SAÉ : Se présenter sur Internet</h2>
+    <p class="center-text">
+      Projet de création d’un mini-site web en HTML/CSS pour se présenter, structurer un CV numérique,
+      et utiliser les balises HTML de manière professionnelle. J’y ai intégré mes compétences, projets et
+      contact dans une page responsive.
+    </p>
+     <div class="image-placeholder">
+  <div class="img-box">
+    <img src="traiter.jpg" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="traiter2.png" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="traiter3.png" alt="Droits utilisateurs" />
+  </div>
+</div>
+    <p>
+  <a href="Saé 1.04_ASSMY.zip" target="_blank">📄 Cliquer ici pour télécharger mon CV au format ZIP</a>
+</p>
+  </section>
+
+  <section class="card accent2" data-aos="fade-right">
+    <h2>SAÉ : Traiter des données - Scripts PowerShell</h2>
+    <p class="center-text">
+      Ce projet nous a permis d’automatiser des tâches comme la création de fichiers, la gestion de dossiers
+      utilisateurs, le renommage automatique, les logs… grâce à des scripts PowerShell. Un bon entraînement à l’administration système.
+    </p>
+      <div class="image-placeholder">
+  <div class="img-box">
+    <img src="powershell2.jpg" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="powershell.jpg" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="powershell1.jpg" alt="Droits utilisateurs" />
+  </div>
+</div>
+  </section>
+
+  <section class="card accent1" data-aos="fade-left">
+    <h2>Ressource R1.07 : Fondamentaux de la programmation (Python)</h2>
+    <p class="center-text">
+      Nous avons exploré les bases de la programmation avec Python : types de données, boucles, fonctions,
+      structures conditionnelles, puis manipulation de fichiers, listes et dictionnaires. Un fondement solide
+      pour les futurs projets orientés scripts et web.
+    </p>
+    <div class="image-placeholder">
+  <div class="img-box">
+    <img src="python.png" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="python1.png" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="python2.png" alt="Droits utilisateurs" />
+  </div>
+</div>
+  </section>
+
+  <section class="card accent3" data-aos="fade-up">
+    <h2>Projets personnels (autodidacte)</h2>
+    <p class="center-text">
+      En dehors des cours, je développe des sites web pour des amis et proches. J’utilise HTML, CSS, un peu de JavaScript,
+      parfois des outils comme Bootstrap ou WordPress. Ces projets m'ont permis de perfectionner mon design,
+      ma logique, et mon autonomie en développement.
+    </p>
+   <div class="image-placeholder">
+  <div class="img-box">
+    <img src="projet.jpg" alt="Affiche sécurité" />
+  </div>
+  <div class="img-box">
+    <img src="projet1.jpg" alt="Mots de passe" />
+  </div>
+  <div class="img-box">
+    <img src="projet2.jpg" alt="Droits utilisateurs" />
+  </div>
+</div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 - Assmy Anas</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("open");
+  }
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>
